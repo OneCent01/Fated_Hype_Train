@@ -1,4 +1,3 @@
-import {FIVE_MINUTES} from './consts.js';
 import {gameLoop} from './gameLoop.js';
 import {getUsers, getHypeTrainEvents} from './fetch.js'
 import {addHypeUser} from './addHypeUser.js';
@@ -15,7 +14,7 @@ const _updateHypeTrain = async (sessionData, showExpired=false) => {
   } catch(err) {}
 
   let i = data.length;
-  let shouldRunTrain = true;
+  let shouldRunTrain = false;
   while(i--) {
     const hypeProgressEvent = data[i];
     const isExpired = (

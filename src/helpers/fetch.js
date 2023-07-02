@@ -1,8 +1,4 @@
-import {
-  MICROSOFT_SPEAKER_TEMPLATES, 
-  UBERDUCK_VOICES,
-} from './consts.js';
-import {APPLICATION_ID, MICROSOFT_TTS_SUBSCRIPTION_KEY, ELEVEN_LABS_API_KEY, PROXY_URL} from '../keys.js';
+import {APPLICATION_ID, PROXY_URL} from '../keys.js';
 
 const getRequestHeaders = (token) => new Headers({
   "Authorization": `Bearer ${token}`,
